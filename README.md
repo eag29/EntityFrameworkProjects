@@ -35,6 +35,7 @@ Aşağıda, uygulamaya ait ekran görüntülerine yer verilmiştir:
 
 # ✨ Devam Eden Çalışmalar
 -Code First yaklaşımıyla yeni bir proje eklenmesi planlanmaktadır.
+
 -Model First yaklaşımıyla geliştirilecek örnek proje yolda.
 
 
