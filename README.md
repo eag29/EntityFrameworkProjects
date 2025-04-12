@@ -1,23 +1,34 @@
-# EntityFrameworkProjects
+🗂️ Entity Framework Projects
+Bu repository, Entity Framework teknolojisini kullanarak geliştirdiğim örnek projeleri içermektedir. Her bir projede farklı veri tabanı yaklaşımını uygulayarak Entity Framework'ün temel kullanım senaryolarını pratik etme ve kavrama amacı taşımaktayım.
 
-Bu repo, Entity Framework teknolojisini kullanarak geliştirdiğim projeleri içermektedir. Tasarım olarak çok fazla özenilmemiştir. Amacım 3 farklı veri tabanı yaklaşımını da kullanarak Entity Framework teknolojisiyle projeler geliştirmektir.
+Not: Projelerin tasarımsal detaylarına fazla odaklanılmamıştır. Ana amaç, Entity Framework kullanımını ve veri erişim yöntemlerini göstermektir.
 
+📌 Hedeflenen Veri Tabanı Yaklaşımları
+Bu repoda aşağıdaki 3 temel Entity Framework yaklaşımını içeren projeler yer almaktadır:
 
+Database First
 
-# Proje 1: Shop Projects
+Code First
 
+Model First
 
-Bu proje Database First yaklaşımıyla geliştirilmiştir. 
-Veri tabanı msSql üzerinden oluşturulup visual studioya aktarılmıştır. 
-Projede CRUD (Create, Read, Update, Delete) işlemleri uygulanmıştır.
-Ürün sayfasında ürün ekleme ve güncelleme işlemlerinde, ürün kategorisini ekleme ve güncelleme listbox aracı ile sağlanmıştır.
-Yapılan değişiklikler sonucunda veriler dataGridView aracına yansıtılmıştır.
+📁 Proje 1: Shop Project (Database First)
+Bu proje, Database First yaklaşımı ile geliştirilmiştir. Aşağıda projenin temel detaylarına yer verilmiştir:
 
+Veritabanı: Microsoft SQL Server (MSSQL) üzerinde oluşturulmuş ve Visual Studio üzerinden projeye dahil edilmiştir.
 
+Temel Özellikler:
 
-# Proje 1: Shop Projects Görselleri
+CRUD (Create, Read, Update, Delete) işlemleri
 
+Ürün ve kategori yönetimi
 
+Ürün ekleme ve güncelleme işlemlerinde ListBox bileşeni kullanılarak kategori seçimi
+
+Yapılan değişikliklerin DataGridView aracılığıyla anlık görüntülenmesi
+
+🖼️ Proje Görselleri
+Aşağıda, uygulamaya ait ekran görüntülerine yer verilmiştir:
 ![FrmAnaSayfa](https://github.com/user-attachments/assets/c2530147-2d6c-4faf-965b-c2ab12dc37be)
 ![FrmCategory](https://github.com/user-attachments/assets/6531d0ab-c1d6-4616-a35d-2de2acb9a430)
 ![FrmProduct](https://github.com/user-attachments/assets/f5e48c19-1b64-4c90-928a-0de7601fdbad)
