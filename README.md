@@ -49,6 +49,7 @@ Aşağıda, uygulamaya ait ekran görüntülerine yer verilmiştir:
 
 # 📫 İletişim
 Eğer bu projeler hakkında soru sormak ya da öneri paylaşmak isterseniz benimle iletişime geçebilirsiniz:
-GitHub: [](https://github.com/eag29?tab=repositories)
-LinkedIn: [](https://www.linkedin.com/in/emir-ali-girgin-a190b1201/)
+
+GitHub: (https://github.com/eag29?tab=repositories)
+LinkedIn: (https://www.linkedin.com/in/emir-ali-girgin-a190b1201/)
 
