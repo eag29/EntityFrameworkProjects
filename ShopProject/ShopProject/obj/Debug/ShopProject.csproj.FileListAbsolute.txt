@@ -1,0 +1,17 @@
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\bin\Debug\ShopProject.exe.config
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\bin\Debug\ShopProject.exe
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\bin\Debug\ShopProject.pdb
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\bin\Debug\EntityFramework.dll
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\bin\Debug\EntityFramework.xml
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.csproj.AssemblyReference.cache
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.FrmCategory.resources
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.FrmMainMenu.resources
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.FrmProduct.resources
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.Properties.Resources.resources
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.csproj.GenerateResource.cache
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.csproj.CoreCompileInputs.cache
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProj.6879BB14.Up2Date
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.exe
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.pdb
