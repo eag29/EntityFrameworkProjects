@@ -1,6 +1,6 @@
 # EntityFrameworkProjects
 
-Bu repo, Entity Framework teknolojisini kullanarak geliştirdiğim projeleri içermektedir.
+Bu repo, Entity Framework teknolojisini kullanarak geliştirdiğim projeleri içermektedir. Tasarım olarak çok fazla özenilmemmiştir. Amacım 3 farklı veri tabanı yaklaşımını da kullanarak Entity Framework teknolojisiyle projeler geliştirmektir.
 
 
 
