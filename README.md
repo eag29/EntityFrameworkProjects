@@ -26,6 +26,7 @@ Bu proje, Database First yaklaşımı ile geliştirilmiştir. Aşağıda projeni
 
 # 🖼️ Proje Görselleri
 Aşağıda, uygulamaya ait ekran görüntülerine yer verilmiştir:
+
 ![FrmAnaSayfa](https://github.com/user-attachments/assets/c2530147-2d6c-4faf-965b-c2ab12dc37be)
 ![FrmCategory](https://github.com/user-attachments/assets/6531d0ab-c1d6-4616-a35d-2de2acb9a430)
 ![FrmProduct](https://github.com/user-attachments/assets/f5e48c19-1b64-4c90-928a-0de7601fdbad)
