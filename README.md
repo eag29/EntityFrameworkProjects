@@ -4,7 +4,7 @@ Bu repository, Entity Framework teknolojisini kullanarak geliştirdiğim örnek 
 Not: Projelerin tasarımsal detaylarına fazla odaklanılmamıştır. Ana amaç, Entity Framework kullanımını ve veri erişim yöntemlerini göstermektir.
 
 
-📌 Hedeflenen Veri Tabanı Yaklaşımları
+# 📌 Hedeflenen Veri Tabanı Yaklaşımları
 Bu repoda aşağıdaki 3 temel Entity Framework yaklaşımını içeren projeler yer almaktadır:
 
 - Database First
@@ -44,6 +44,8 @@ Aşağıda, uygulamaya ait ekran görüntülerine yer verilmiştir:
 - MSSQL
 - Windows Forms (WinForms)
 - Visual Studio
+
+
 
 # 📫 İletişim
 Eğer bu projeler hakkında soru sormak ya da öneri paylaşmak isterseniz benimle iletişime geçebilirsiniz:
