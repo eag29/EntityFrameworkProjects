@@ -21,16 +21,17 @@ Bu proje, Database First yaklaşımı ile geliştirilmiştir. Aşağıda projeni
 - Ürün ve kategori yönetimi
 - Ürün ekleme ve güncelleme işlemlerinde ListBox bileşeni kullanılarak kategori seçimi
 - Yapılan değişikliklerin DataGridView aracılığıyla anlık görüntülenmesi
+- Linq sorguları ile istatistik verileri tutulmuştur.
 
 
 
 # 🖼️ Proje Görselleri
 Aşağıda, uygulamaya ait ekran görüntülerine yer verilmiştir:
 
-![FrmAnaSayfa](https://github.com/user-attachments/assets/c2530147-2d6c-4faf-965b-c2ab12dc37be)
+![FrmAnaSayfa](https://github.com/user-attachments/assets/4de81377-6f0e-4666-a983-082d6f702213)
 ![FrmCategory](https://github.com/user-attachments/assets/6531d0ab-c1d6-4616-a35d-2de2acb9a430)
 ![FrmProduct](https://github.com/user-attachments/assets/f5e48c19-1b64-4c90-928a-0de7601fdbad)
-
+![FrmIstatistik](https://github.com/user-attachments/assets/ea8b7fa2-93a8-489b-b2ca-a830333cdef7)
 
 
 # ✨ Devam Eden Çalışmalar
