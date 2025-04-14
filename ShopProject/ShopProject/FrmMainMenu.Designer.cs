@@ -31,6 +31,7 @@
             this.btnCategory = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnStatistic = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ShopProject.Properties.Resources.Close;
-            this.pictureBox1.Location = new System.Drawing.Point(480, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(724, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(56, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -67,11 +68,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btnStatistic
+            // 
+            this.btnStatistic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnStatistic.Location = new System.Drawing.Point(548, 100);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.Size = new System.Drawing.Size(169, 150);
+            this.btnStatistic.TabIndex = 3;
+            this.btnStatistic.Text = "STATİSTİC";
+            this.btnStatistic.UseVisualStyleBackColor = false;
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
+            // 
             // FrmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 355);
+            this.ClientSize = new System.Drawing.Size(782, 355);
+            this.Controls.Add(this.btnStatistic);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnProduct);
             this.Controls.Add(this.btnCategory);
@@ -91,5 +104,6 @@
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnStatistic;
     }
 }

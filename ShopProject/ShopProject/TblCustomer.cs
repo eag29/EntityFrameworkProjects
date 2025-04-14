@@ -12,22 +12,19 @@ namespace ShopProject
     using System;
     using System.Collections.Generic;
     
-    public partial class TblProduct
+    public partial class TblCustomer
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TblProduct()
+        public TblCustomer()
         {
             this.TblOrder = new HashSet<TblOrder>();
         }
     
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public Nullable<decimal> ProductStock { get; set; }
-        public Nullable<decimal> ProductPrice { get; set; }
-        public Nullable<bool> ProductStatus { get; set; }
-        public Nullable<int> ProductCategory { get; set; }
+        public int CustomerID { get; set; }
+        public string CustomerName { get; set; }
+        public string CustomerCountry { get; set; }
+        public string CustomerCity { get; set; }
     
-        public virtual TblCategory TblCategory { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TblOrder> TblOrder { get; set; }
     }

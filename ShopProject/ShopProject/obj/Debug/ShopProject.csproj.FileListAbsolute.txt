@@ -15,3 +15,4 @@ C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopPr
 C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProj.6879BB14.Up2Date
 C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.exe
 C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.pdb
+C:\Users\Emir Ali\Documents\Projeler\EntityFrameworkProjeleri\ShopProject\ShopProject\obj\Debug\ShopProject.FrmStatistic.resources

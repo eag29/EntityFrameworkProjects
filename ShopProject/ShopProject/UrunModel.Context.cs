@@ -27,5 +27,7 @@ namespace ShopProject
     
         public virtual DbSet<TblCategory> TblCategory { get; set; }
         public virtual DbSet<TblProduct> TblProduct { get; set; }
+        public virtual DbSet<TblCustomer> TblCustomer { get; set; }
+        public virtual DbSet<TblOrder> TblOrder { get; set; }
     }
 }

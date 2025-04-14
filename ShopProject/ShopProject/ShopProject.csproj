@@ -73,9 +73,21 @@
     <Compile Include="FrmProduct.Designer.cs">
       <DependentUpon>FrmProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStatistic.Designer.cs">
+      <DependentUpon>FrmStatistic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TblCategory.cs">
+      <DependentUpon>UrunModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblCustomer.cs">
+      <DependentUpon>UrunModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblOrder.cs">
       <DependentUpon>UrunModel.tt</DependentUpon>
     </Compile>
     <Compile Include="TblProduct.cs">
@@ -104,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProduct.resx">
       <DependentUpon>FrmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStatistic.resx">
+      <DependentUpon>FrmStatistic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

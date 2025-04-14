@@ -19,6 +19,7 @@
     <Property Name="ProductStatus" Type="Boolean" />
     <Property Name="ProductCategory" Type="Int32" />
     <NavigationProperty Name="TblCategory" Relationship="Self.FK_TblProduct_TblCategory" FromRole="TblProduct" ToRole="TblCategory" />
+    <NavigationProperty Name="TblOrder" Relationship="UrunVtModel.FK_TblOrder_TblProduct" FromRole="TblProduct" ToRole="TblOrder" />
   </EntityType>
   <Association Name="FK_TblProduct_TblCategory">
     <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
@@ -39,5 +40,62 @@
       <End Role="TblCategory" EntitySet="TblCategory" />
       <End Role="TblProduct" EntitySet="TblProduct" />
     </AssociationSet>
+    <EntitySet Name="TblCustomer" EntityType="UrunVtModel.TblCustomer" />
+    <EntitySet Name="TblOrder" EntityType="UrunVtModel.TblOrder" />
+    <AssociationSet Name="FK_TblOrder_TblCustomer" Association="UrunVtModel.FK_TblOrder_TblCustomer">
+      <End Role="TblCustomer" EntitySet="TblCustomer" />
+      <End Role="TblOrder" EntitySet="TblOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblOrder_TblProduct" Association="UrunVtModel.FK_TblOrder_TblProduct">
+      <End Role="TblProduct" EntitySet="TblProduct" />
+      <End Role="TblOrder" EntitySet="TblOrder" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="TblCustomer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerCountry" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerCity" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TblOrder" Relationship="UrunVtModel.FK_TblOrder_TblCustomer" FromRole="TblCustomer" ToRole="TblOrder" />
+  </EntityType>
+  <EntityType Name="TblOrder">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="UnitPrice" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="TblCustomer" Relationship="UrunVtModel.FK_TblOrder_TblCustomer" FromRole="TblOrder" ToRole="TblCustomer" />
+    <NavigationProperty Name="TblProduct" Relationship="UrunVtModel.FK_TblOrder_TblProduct" FromRole="TblOrder" ToRole="TblProduct" />
+  </EntityType>
+  <Association Name="FK_TblOrder_TblCustomer">
+    <End Type="UrunVtModel.TblCustomer" Role="TblCustomer" Multiplicity="0..1" />
+    <End Type="UrunVtModel.TblOrder" Role="TblOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblCustomer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="TblOrder">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblOrder_TblProduct">
+    <End Type="UrunVtModel.TblProduct" Role="TblProduct" Multiplicity="0..1" />
+    <End Type="UrunVtModel.TblOrder" Role="TblOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblProduct">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="TblOrder">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

@@ -7,6 +7,26 @@
     <Property Name="CategoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="CategoryName" Type="nvarchar" MaxLength="15" />
   </EntityType>
+  <EntityType Name="TblCustomer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="20" />
+    <Property Name="CustomerCountry" Type="nvarchar" MaxLength="15" />
+    <Property Name="CustomerCity" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="TblOrder">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="Count" Type="int" />
+    <Property Name="UnitPrice" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="TotalPrice" Type="decimal" Precision="18" Scale="4" />
+  </EntityType>
   <EntityType Name="TblProduct">
     <Key>
       <PropertyRef Name="ProductId" />
@@ -18,6 +38,30 @@
     <Property Name="ProductStatus" Type="bit" />
     <Property Name="ProductCategory" Type="int" />
   </EntityType>
+  <Association Name="FK_TblOrder_TblCustomer">
+    <End Role="TblCustomer" Type="Self.TblCustomer" Multiplicity="0..1" />
+    <End Role="TblOrder" Type="Self.TblOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblCustomer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="TblOrder">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblOrder_TblProduct">
+    <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="0..1" />
+    <End Role="TblOrder" Type="Self.TblOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblProduct">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="TblOrder">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_TblProduct_TblCategory">
     <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
     <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="*" />
@@ -32,7 +76,17 @@
   </Association>
   <EntityContainer Name="UrunVtModelStoreContainer">
     <EntitySet Name="TblCategory" EntityType="Self.TblCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblCustomer" EntityType="Self.TblCustomer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblOrder" EntityType="Self.TblOrder" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblProduct" EntityType="Self.TblProduct" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TblOrder_TblCustomer" Association="Self.FK_TblOrder_TblCustomer">
+      <End Role="TblCustomer" EntitySet="TblCustomer" />
+      <End Role="TblOrder" EntitySet="TblOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblOrder_TblProduct" Association="Self.FK_TblOrder_TblProduct">
+      <End Role="TblProduct" EntitySet="TblProduct" />
+      <End Role="TblOrder" EntitySet="TblOrder" />
+    </AssociationSet>
     <AssociationSet Name="FK_TblProduct_TblCategory" Association="Self.FK_TblProduct_TblCategory">
       <End Role="TblCategory" EntitySet="TblCategory" />
       <End Role="TblProduct" EntitySet="TblProduct" />

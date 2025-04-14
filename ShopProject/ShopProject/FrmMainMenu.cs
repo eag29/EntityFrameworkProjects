@@ -27,6 +27,11 @@ namespace ShopProject
             FrmProduct frmProduct = new FrmProduct();
             frmProduct.Show();
         }
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+            FrmStatistic frmStatistic = new FrmStatistic();
+            frmStatistic.Show();
+        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
