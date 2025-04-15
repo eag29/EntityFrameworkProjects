@@ -5,11 +5,10 @@ Not: Projelerin tasarımsal detaylarına fazla odaklanılmamıştır. Ana amaç,
 
 
 # 📌 Hedeflenen Veri Tabanı Yaklaşımları
-Bu repoda aşağıdaki 3 temel Entity Framework yaklaşımını içeren projeler yer almaktadır:
+Bu repoda aşağıdaki 2 temel Entity Framework yaklaşımını içeren projeler yer almaktadır:
 
 - Database First
 - Code First
-- Model First
 
 
 
@@ -19,14 +18,14 @@ Bu proje, Database First yaklaşımı ile geliştirilmiştir. Aşağıda projeni
 - Veritabanı: Microsoft SQL Server (MSSQL) üzerinde oluşturulmuş ve Visual Studio üzerinden projeye dahil edilmiştir.
 - Temel Özellikler: CRUD (Create, Read, Update, Delete) işlemleri
 - Ürün ve kategori yönetimi
-- Ürün ekleme ve güncelleme işlemlerinde ListBox bileşeni kullanılarak kategori seçimi
+- Ürün ekleme ve güncelleme işlemlerinde comboBox bileşeni kullanılarak kategori seçimi
 - Yapılan değişikliklerin DataGridView aracılığıyla anlık görüntülenmesi
 - Linq sorguları ile istatistik verileri tutulmuştur.
 
 
 
-# 🖼️ Proje Görselleri
-Aşağıda, uygulamaya ait ekran görüntülerine yer verilmiştir:
+# 🖼️ Proje1 Görselleri
+Aşağıda, 1.projeye ait uygulamaya ait ekran görüntülerine yer verilmiştir:
 
 ![FrmAnaSayfa](https://github.com/user-attachments/assets/4de81377-6f0e-4666-a983-082d6f702213)
 ![FrmCategory](https://github.com/user-attachments/assets/6531d0ab-c1d6-4616-a35d-2de2acb9a430)
@@ -34,10 +33,25 @@ Aşağıda, uygulamaya ait ekran görüntülerine yer verilmiştir:
 ![FrmIstatistik](https://github.com/user-attachments/assets/ea8b7fa2-93a8-489b-b2ca-a830333cdef7)
 
 
-# ✨ Devam Eden Çalışmalar
--Code First yaklaşımıyla yeni bir proje eklenmesi planlanmaktadır.
 
--Model First yaklaşımıyla geliştirilecek örnek proje yolda.
+
+# 📁 Proje 2: CodeFirstMovieProject (Code First)
+Bu proje, Code First yaklaşımı ile geliştirilmiştir. Aşağıda projenin temel detaylarına yer verilmiştir:
+
+- Veritabanı: Microsoft SQL Server (MSSQL) üzerinde oluşturulmuş ve Visual Studio üzerinden projeye dahil edilmiştir.
+- Temel Özellikler: Insert, Update, Delete, List, Search işlemleri
+- Kategori ve Film yönetimi
+- Film ekleme ve güncelleme işlemlerinde comboBox bileşeni kullanılarak kategori seçimi
+- Yapılan değişikliklerin DataGridView aracılığıyla anlık görüntülenmesi
+
+
+
+# 🖼️ Proje2 Görselleri
+Aşağıda, 2.projeye ait uygulamaya ait ekran görüntülerine yer verilmiştir:
+
+![FrmMainMenu](https://github.com/user-attachments/assets/10b0550f-213f-40ff-99f6-e4298cf7f8fb)
+![FrmCategory](https://github.com/user-attachments/assets/1ef9476a-f756-48d4-8a69-dedd12abce30)
+![FrmMovies](https://github.com/user-attachments/assets/0ec39bbd-e1bb-4a94-b9d4-30342574f006)
 
 
 
