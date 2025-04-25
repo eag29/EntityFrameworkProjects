@@ -68,7 +68,7 @@ Aşağıda, 2.projeye ait uygulamaya ait ekran görüntülerine yer verilmiştir
 # 🚀 Teknolojiler
 - Entity Framework
 - MSSQL
-- Windows Forms (WinForms)
+- Windows Forms
 - Visual Studio
 
 
